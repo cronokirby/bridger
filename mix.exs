@@ -18,6 +18,7 @@ defmodule Bridger.Mixfile do
   defp deps do
     [
       {:alchemy, "~> 0.6.0", hex: :discord_alchemy},
+      {:exirc, "~> 1.0.1"}
     ]
   end
 end
