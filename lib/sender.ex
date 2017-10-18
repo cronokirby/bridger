@@ -52,6 +52,7 @@ defmodule Bridger.Sender do
   end
 
   def handle_cast({:send_message, irc, msg_info}, table) do
+    IO.inspect(msg_info)
     case get_info(table, irc) do
       {:ok, webhook, image} ->
         options = if image do
